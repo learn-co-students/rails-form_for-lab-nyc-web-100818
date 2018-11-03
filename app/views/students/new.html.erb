@@ -1,0 +1,13 @@
+<h1>Student Form</h1>
+
+<%= form_for(@student) do |f| %>
+
+  <h3><label>First Name:</label></h3>
+  <%= f.text_field :first_name %>
+
+  <h3><label>Last Name:</label></h3>
+  <%= f.text_field :last_name %>
+
+  <%= f.submit %>
+
+<% end %>
