@@ -1,0 +1,8 @@
+<h1>Students:</h1>
+<h4><%= link_to "would you like to view classes instead?", school_classes_path %></h4>
+
+<% @students.each do |student| %>
+  <h2><%= link_to student.to_s, student_path(student) %></h2>
+<% end %>
+
+<h4><%= link_to "new student", new_student_path %></h4>
