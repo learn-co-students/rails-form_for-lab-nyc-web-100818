@@ -1,0 +1,8 @@
+<h1>STUDENT ROLL CALL!</h1>
+
+  Students:
+  <ol>
+  <% @students.each do |s|  %>
+  <li> <%= "#{s.first_name} #{s.last_name}" %></li>
+  <% end %>
+  </ol>
