@@ -1,0 +1,5 @@
+<h1>School Class Index</h1>
+
+<% @school_classes.each_with_index do |sc| %>
+<%="#{index+1}. #{sc.title}"%> <br>
+<% end %>
